@@ -44,3 +44,11 @@ function mostrarAviso() {
         aviso.style.display = "none";
     }, 2000);
 }
+function filtrarJutsu(elemento) {
+    // Esconde todas as seções
+    document.querySelectorAll('.lista-jutsus').forEach(sec => {
+        sec.style.display = 'none';
+    });
+    // Mostra apenas a clicada
+    document.querySelector('.' + elemento + '-section').style.display = 'block';
+}
