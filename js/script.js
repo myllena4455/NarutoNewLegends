@@ -52,3 +52,62 @@ function filtrarJutsu(elemento) {
     // Mostra apenas a clicada
     document.querySelector('.' + elemento + '-section').style.display = 'block';
 }
+function filtrarSistemas() {
+    // 1. Pega o texto da busca
+    let input = document.getElementById('buscaSistemas').value.toLowerCase();
+    
+    // 2. Pega a seção de sistemas
+    let secaoSistemas = document.getElementById('sistemas');
+    
+    // 3. Pega todos os blocos que são "filhos" diretos da seção sistemas
+    // Isso garante que ele pegue QUALQUER div de sistema (Líderes, Treino, Atributos, etc)
+    let blocos = secaoSistemas.children;
+
+    for (let i = 0; i < blocos.length; i++) {
+        let bloco = blocos[i];
+        
+        // Ignora o Título da página e a própria Barra de Pesquisa na busca
+        if (bloco.tagName === "H2" || bloco.classList.contains('container-pesquisa-sistemas')) {
+            continue;
+        }
+
+        // Pega todo o texto dentro do bloco
+        let textoNoBloco = bloco.innerText.toLowerCase();
+        
+        // Se encontrar o texto, mostra. Se não, esconde.
+        if (textoNoBloco.includes(input)) {
+            bloco.style.display = ""; // Mostra
+            bloco.style.opacity = "1";
+        } else {
+            bloco.style.display = "none"; // Esconde
+        }
+    }
+}
+
+function filtrarSistemas() {
+    // 1. Pega o que foi digitado
+    let input = document.getElementById('buscaSistemas').value.toLowerCase().trim();
+    let secaoSistemas = document.getElementById('sistemas');
+    
+    // 2. Pega todos os elementos que podem ser um "bloco de sistema"
+    // Aqui incluímos todas as classes que você usou no HTML
+    let blocos = secaoSistemas.querySelectorAll('.card-sistema, .painel-lideranca, .lider-box, .divisor-biju');
+
+    blocos.forEach(bloco => {
+        // Se for um divisor (aquela linha laranja), só mostramos se a busca estiver vazia
+        if (bloco.classList.contains('divisor-biju')) {
+            bloco.style.display = (input === "") ? "block" : "none";
+            return;
+        }
+
+        // Pega o texto de dentro do bloco
+        let textoNoBloco = bloco.innerText.toLowerCase();
+
+        // 3. Lógica de busca
+        if (textoNoBloco.includes(input)) {
+            bloco.style.display = ""; // Mostra o bloco
+        } else {
+            bloco.style.display = "none"; // Esconde o bloco
+        }
+    });
+}

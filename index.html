@@ -132,32 +132,99 @@
 
 
     <section id="sistemas" class="aba-conteudo">
-      
-         <p class="intro-sistemas">
-        Este espaço é dedicado ao coração mecânico da nossa jornada. Aqui, você encontrará todas as diretrizes fundamentais para a sua sobrevivência e evolução no mundo.
-    </p>
-    <div class="card-sistema">
-    <h2>📜 Sistema de Aprendizado de Jutsus</h2>
-    <div class="texto-regra">
-        <p><em>A cada rank de jutsu, será necessário certa quantidade de palavras (sugiro baixar um aplicativo que conte) ou apenas entregue ao ADM que ele mesmo verá:</em></p>
-        
-        <ul class="lista-bonus">
-            <li><strong>Rank E:</strong> 250 Caracteres</li>
-            <li><strong>Rank D:</strong> 500 Caracteres</li>
-            <li><strong>Rank C:</strong> 1.000 Caracteres</li>
-            <li><strong>Rank B:</strong> 2.000 Caracteres</li>
-            <li><strong>Rank A:</strong> 3.000 Caracteres</li>
-            <li><strong>Rank S:</strong> 5.000 Caracteres</li>
-        </ul>
+    <h2 class="titulo-destaque-rpg">SISTEMAS DO RPG</h2>
 
-        <div class="caixa-obs">
-            <p>Para a criação do jutsu, você precisará ser jounnin e explicar o jutsu para um ADM, após ele entender, ele dirá o rank e a quantidade de palavras que você terá que fazer.</p>
-            
-            <p>Cada player podendo aprender 1 jutsus por dia (exceto os prodígios) sendo que gennins podem aprender apenas jutsus de rank E, D e C sendo 1 por dia ainda (exceto um gennin prodígio, que pode aprender 1 A mais).</p>
-            
-            <p><strong>Descanso:</strong> Após aprenderem os jutsus de sua vontade, estes devem descansar. "Como assim?" A cada 2 jutsus aprendidos, são 1 hora de descanso.</p>
+    <div class="container-pesquisa-sistemas">
+        <input type="text" id="buscaSistemas" onkeyup="filtrarSistemas()" placeholder="🔍 Pesquisar sistema...">
+    </div>
+
+      <br>
+    <div class="card-sistema">
+   <div class="painel-lideranca">
+    <div class="lider-header">
+        <h2 class="titulo-lider-premium">📜 SISTEMA DE APRENDIZADO DE JUTSUS</h2>
+        <p class="texto-claro">Regras de estudo e limites diários de técnicas.</p>
+    </div>
+
+    <div class="lider-container">
+        <div class="lider-box">
+            <h3><i class="fas fa-scroll"></i> Requisitos de Caracteres</h3>
+            <p class="texto-branco">A cada rank de jutsu, será necessário certa quantidade de palavras (sugiro baixar um aplicativo que conte) ou apenas entregue ao ADM que ele mesmo verá:</p>
+            <ul class="lista-lider">
+                <li><span class="destaque-importante">Rank E:</span> <span class="destaque-bonus">250 Caracteres</span></li>
+                <li><span class="destaque-importante">Rank D:</span> <span class="destaque-bonus">500 Caracteres</span></li>
+                <li><span class="destaque-importante">Rank C:</span> <span class="destaque-bonus">1.000 Caracteres</span></li>
+                <li><span class="destaque-importante">Rank B:</span> <span class="destaque-bonus">2.000 Caracteres</span></li>
+                <li><span class="destaque-importante">Rank A:</span> <span class="destaque-bonus">3.000 Caracteres</span></li>
+                <li><span class="destaque-importante">Rank S:</span> <span class="destaque-bonus">5.000 Caracteres</span></li>
+            </ul>
+        </div>
+
+        <div class="lider-box">
+            <h3><i class="fas fa-pen-nib"></i> Criação de Jutsu</h3>
+            <p class="texto-branco">Para a criação do jutsu, você precisará ser jounnin e explicar o jutsu para um ADM, após ele entender, ele dirá o rank e a quantidade de palavras que você terá que fazer.</p>
+        </div>
+
+        <div class="lider-box">
+            <h3><i class="fas fa-hourglass-half"></i> Limites Diários e Descanso</h3>
+            <p class="texto-branco">Cada player podendo aprender <span class="destaque-bonus">5 jutsus por dia</span> sendo que gennins podem aprender apenas jutsus de rank E, D e C (sendo prodigio podendo Rank B) sendo 5 por dia ainda.</p>
+            <p class="texto-branco" style="margin-top:15px;"><strong>Regra de Descanso:</strong> Após aprenderem os jutsus de sua vontade, estes devem descansar. A cada <span class="destaque-importante">2 jutsus aprendidos</span>, são necessárias <span class="destaque-bonus">2 horas de descanso</span>.</p>
         </div>
     </div>
+</div>
+
+<div class="divisor-brilhante"></div>
+
+<div class="painel-lideranca">
+    <div class="lider-header">
+        <h2 class="titulo-lider-premium">🏋️ SISTEMA DE TREINO</h2>
+        <p class="texto-claro">Evolução baseada em tempo e dedicação.</p>
+    </div>
+
+    <div class="lider-container">
+        <div class="lider-box">
+            <h3><i class="fas fa-clock"></i> Treino por Tempo</h3>
+            <p class="texto-branco">O treino é baseado em tempo, diferente de jutsus. a cada hora off do grupo on, você receberá 10 pontos para distribuir em sua ficha, exemplo:</p>
+            <div class="exemplo-treino" style="background: #111; padding: 10px; border-radius: 5px; border: 1px dashed #ff9100; color: #00ff64;">
+                <code>(Nome do seu pp) inicia um treino de x horas @(marca um ADM)</code>
+            </div>
+            <p class="texto-branco" style="margin-top:10px;">E conforme as horas passam você ganha 10 pontos, <span class="destaque-bonus">1h = 10 pontos</span>. Caso você queira cenar enquanto treina, é algo impossível, portanto, seu treino será cancelado.</p>
+        </div>
+
+        <div class="lider-box">
+            <h3><i class="fas fa-bed"></i> Descanso de Treino</h3>
+            <p class="texto-branco">A cada hora que se passa de treino, seu personagem terá que ter a divisão por 2 dessas horas de descanso, por exemplo: <span class="destaque-importante">treino de 12 horas = 6 horas de descanso</span>.</p>
+            <p class="texto-branco" style="font-style: italic; color: #bbb !important;">"Como assim descanso?" Certo tempo sem aprender jutsus ou ir em missões, pois o mesmo estará descansando.</p>
+        </div>
+    </div>
+</div>
+
+</div>
+<div class="card-sistema">
+<div class="painel-lideranca">
+    <div class="lider-header">
+        <h2 class="titulo-lider-premium">⚔️ MÉDIA DE FORÇA BASEADA EM PONTOS</h2>
+        <p class="texto-claro">Tabela de níveis de poder para NPCs e Jutsus.</p>
+    </div>
+
+    <div class="lider-container">
+        <div class="lider-box">
+            <h3><i class="fas fa-chart-line"></i> Escala de Patentes</h3>
+            <ul class="lista-lider">
+                <li><span class="destaque-importante">Gennin:</span> <span class="destaque-bonus">0 a 150k</span></li>
+                <li><span class="destaque-importante">Chunnin:</span> <span class="destaque-bonus">150k a 300k</span></li>
+                <li><span class="destaque-importante">Jounnin:</span> <span class="destaque-bonus">300k a 500k</span></li>
+                <li><span class="destaque-importante">Anbu/sannin:</span> <span class="destaque-bonus">500k a 850k</span></li>
+                <li><span class="destaque-importante">Kage:</span> <span class="destaque-bonus">850k a 1.25M</span></li>
+            </ul>
+        </div>
+
+        <div class="lider-box">
+            <h3><i class="fas fa-info-circle"></i> Utilidade do Sistema</h3>
+            <p class="texto-branco">Serve para tabelar Npcs e até mesmo Jutsus que Os Players forem Usar.</p>
+        </div>
+    </div>
+</div>
 </div>
 
 <div class="divisor-biju"></div>
@@ -181,9 +248,10 @@
         <code>Esses Multiplicadores Só são validos para Jutsus dos 5 elementos Sendo eles: Katon, Suiton, Fuuton, Doton e Raiton.</code>
     </div>
 </div>
-   
+    </div>
  <div class="divisor-biju"></div>
 
+      
 <div class="card-sistema">
     <h2>𝐒𝐈𝐒𝐓𝐄𝐌𝐀 𝐃𝐄 𝐓𝐑𝐄𝐈𝐍𝐎𝐒</h2>
     
@@ -586,48 +654,123 @@
     <section id="criar-ficha" class="aba-conteudo">
       
     <h2>📝 CRIAÇÃO DE PERSONAGEM</h2>
-
-    <div class="card-sistema">
-        <h3>📊 Entendendo os Atributos</h3>
-      <br>
-        <div class="texto-regra">
-            <p><strong>Taijutsu:</strong> É o atributo bruto para o físico. Força, velocidade e agilidade são derivados dele.</p>
-          <br>
-            <p><strong>Força:</strong> Dano físico sem armas. Para causar dano total, a diferença deve passar de 30% da resistência do alvo.</p>
-          <br>
-            <p><strong>Velocidade:</strong> Movimento. Para superar alguém, você deve ser 25% mais rápido.</p>
-          <br>
-            <p><strong>Agilidade:</strong> Esquiva. Deve ser 25% superior ao ataque adversário (físico ou chakra).</p>
-          <br>
-            <p><strong>Resistência:</strong> Defesa contra Nin, Ken ou Tai. Se for maior que a diferença de dano, você não recebe dano.</p>
-          <br>
-            <p><strong>Kenjutsu:</strong> Uso de armas. Soma 20% da Força no golpe e define a velocidade com Kunais/Shurikens.</p>
-          <br>
-            <p><strong>Ninjutsu:</strong> Define o dano, velocidade e resistência dos seus Jutsus (especialmente Doton/Mokuton).</p>
-          <br>
-            <p><strong>Genjutsu:</strong> Dano e escape. Se a diferença defensiva for menor que 20%, você é pego pela ilusão.</p>
-        </div>
+<div class="painel-lideranca"> <div class="lider-header">
+        <h2 class="titulo-lider-premium">📊 SISTEMA DE ATRIBUTOS</h2>
+        <p class="texto-claro">Guia detalhado de capacidades físicas e espirituais.</p>
     </div>
 
-    <div class="card-sistema">
-        <pre class="arte-borda">
-      🍂 Habilidade Pessoal 🍂
-</pre>
-
-        <div class="habilidade-grid">
-            <div class="hab-item"><strong>🏮 Nato com Genjutsu:</strong> (2x) Genjutsu. Inimigo precisa do dobro de pontos para te prender.</div>
-            <div class="hab-item"><strong>🏮 Força Extra:</strong> (2x) em Força.</div>
-            <div class="hab-item"><strong>🏮 Velocidade Elevada:</strong> (2x) em Velocidade de locomoção.</div>
-            <div class="hab-item"><strong>🏮 Agilidade Avançada:</strong> (2x) em Agilidade para esquivas.</div>
-            <div class="hab-item"><strong>🏮 Prodígio:</strong> QI avançado. Aprende jutsus 1 Rank acima e com metade das palavras.</div>
-            <div class="hab-item"><strong>🏮 Espadachim:</strong> (2x) em Kenjutsu. Chance de receber espadas em missões Rank B.</div>
-            <div class="hab-item"><strong>🏮 Resistência Elevada:</strong> (2x) em Resistência. Ignora dor de membros deslocados/feridos.</div>
-            <div class="hab-item"><strong>🏮 Nato em Ninjutsu:</strong> (2x) em Ninjutsu. Maestria elevada e redução de 1 selo.</div>
-            <div class="hab-item"><strong>🏮 Nato em Selos:</strong> Faz selos com apenas uma mão e reduz 1 selo por Jutsu.</div>
-            <div class="hab-item"><strong>🏮 Resistência Elemental:</strong> Redução de 25% no dano de Jutsus elementais (exceto Kekkeis).</div>
-            <div class="hab-item"><strong>🏮 Fios de Chakra:</strong> (2x) em Marionetes. Aumenta alcance e eficácia de pergaminhos.</div>
+    <div class="lider-container">
+        
+        <div class="lider-box">
+            <h3><i class="fas fa-fist-raised"></i> Taijutsu</h3>
+            <p class="texto-branco">Taijutsu e o Atributo Bruto que usamos para seu físico, aonde sua força velocidade e agilidade será tirada deste atributo em si, Se Você For usar Força e seu Taijutsu tem 5.000, sua força equivale a 5.000 e assim para os outros atributos.</p>
         </div>
+
+        <div class="lider-box">
+            <h3><i class="fas fa-dumbbell"></i> Força</h3>
+            <p class="texto-branco">Esse Atributo e aonde você ira tirar do Valor do Taijutsu para calcular sua força física para efetuar golpes sem uso de armas, Usuários de Nintaijutsu Usam da Forca e do Ninjutsu para Calcular Dano, o dano sera calculado a diferença que passar de <span class="destaque-bonus">30% da Resistência</span> do Adversário passando desse valor, o que tal ataque era para acontecer sera realizado sem dificuldade, mas se a diferença for muito pouca não causará o dano total.</p>
+        </div>
+
+        <div class="lider-box">
+            <h3><i class="fas fa-running"></i> Velocidade</h3>
+            <p class="texto-branco">Aqui e aonde voce tira do Atributo Taijutsu para que possa Medir Sua velocidade de movimento, com isso para que alguem seja mais rapido que você deve ser <span class="destaque-bonus">25% mais rápido</span> que você e vice-versa, Para Fazer Uso Da Velocidade Você deve pegar <span class="destaque-bonus">30% Do Atributo do Taijutsu</span>, esse valor será sua velocidade de Deslocamento.</p>
+        </div>
+
+        <div class="lider-box">
+            <h3><i class="fas fa-wind"></i> Agilidade</h3>
+            <p class="texto-branco">Esse atributo quando tirado do Taijutsu sera o valor destinado a sua agilidade, para conseguir desviar de algum ataque, sua agilidade deve ser <span class="destaque-bonus">25% superior</span> ao ataque adversário seja físico ou com chakra.</p>
+        </div>
+
+        <div class="lider-box">
+            <h3><i class="fas fa-shield-alt"></i> Resistencia</h3>
+            <p class="texto-branco">Esse atributo sera tirado do Taijutsu e com isso Quando receber um dano de Ninjutsu ou ate mesmo ken ou tai, com isso se sua resistência for maior que a diferença dita, tu nao recebe dano.</p>
+        </div>
+
+        <div class="lider-box">
+            <h3><i class="fas fa-khanda"></i> Kenjutsu</h3>
+            <p class="texto-branco">Esse atributo e devido ao uso de armas e equipamentos, espadas e armas para combate terá <span class="destaque-bonus">20% do Atributo de Força</span> no momento do golpe com a arma, e tbm serve para contar a velocidade no uso dos equipamentos e armas de menor porte como Kunai e shuriken.</p>
+        </div>
+
+        <div class="lider-box">
+            <h3><i class="fas fa-fire"></i> Ninjutsu</h3>
+            <p class="texto-branco">Esse atributo serve lara definir como Dano velocidade e resistência de seus jutsus, principalmente jutsus de maior resistência como doton e mokuton.</p>
+        </div>
+
+        <div class="lider-box">
+            <h3><i class="fas fa-eye"></i> Genjutsu</h3>
+            <p class="texto-branco">Este atributo ser usado para o dano do genjutsu, ele tbm serve para que possa escapar de um Genjutsu, com a diferença de <span class="destaque-bonus">20% entre o Genjutsu adversário</span> quando for usado, caso essa diferença seja superada defensivamente vc toma o dano, caso o Genjutsu nao seja superado pelo 20% de quem recebe o Genjutsu você naoe afetado.</p>
+        </div>
+
     </div>
+</div>
+
+
+    <div class="card-sistema">
+      <div class="painel-lideranca">
+    <div class="lider-header">
+        <h2 class="titulo-lider-premium">⛩️ HABILIDADES PESSOAIS</h2>
+        <p class="texto-claro">Escolha as perícias que definem o seu caminho ninja.</p>
+    </div>
+
+    <div class="lider-container">
+
+        <div class="lider-box">
+            <h3><i class="fas fa-eye"></i> Nato com genjutsus</h3>
+            <p class="texto-branco">Shinobis que adquirirem essa habilidade serão mais fortes em Genjutsu, tendo assim <span class="destaque-bonus">(2x) na área "Genjutsu"</span> e caso alguém queira os prender em um genjutsu, será necessário ter o dobro na área Genjutsu.</p>
+        </div>
+
+        <div class="lider-box">
+            <h3><i class="fas fa-fist-raised"></i> Força extra</h3>
+            <p class="texto-branco">Aqueles que tiverem "Força extra" em suas habilidades pessoais terão <span class="destaque-bonus">(2x) em força</span>.</p>
+        </div>
+
+        <div class="lider-box">
+            <h3><i class="fas fa-running"></i> Velocidade Elevada</h3>
+            <p class="texto-branco">Aqueles que tiverem "Velocidade Elevada" terão <span class="destaque-bonus">(2x) em velocidade</span>, não confunda com agilidade, Velocidade é o tempo em que você leva de um ponto a outro, agilidade pode ser usada para esquivar de ataques e outros.</p>
+        </div>
+
+        <div class="lider-box">
+            <h3><i class="fas fa-wind"></i> Agilidade Avançada</h3>
+            <p class="texto-branco">Esses tem mais facilidade desviando de socos e chutes, tendo assim <span class="destaque-bonus">(2x) em Agilidade</span>.</p>
+        </div>
+
+        <div class="lider-box">
+            <h3><i class="fas fa-brain"></i> Prodígio</h3>
+            <p class="texto-branco">Esses são mais habilidosos em certas questões como QI avançado, tendo assim mais facilidade em aprender jutsus. (Gennins podem aprender jutsus de rank E, D e C. e em casos dos prodígios, aprenderão jutsus de 1 rank a mais, assim tendo <span class="destaque-bonus">metade das palavras necessárias</span> para aprender algum Jutsu.)</p>
+        </div>
+
+        <div class="lider-box">
+            <h3><i class="fas fa-khanda"></i> Espadachim</h3>
+            <p class="texto-branco">Estes tendo <span class="destaque-bonus">(2x) em Kenjutsu</span>, tendo a facilidade de usar espadas, fazendo movimentos mais difíceis e tendo a chance de receberem espadas após missões de rank B.</p>
+        </div>
+
+        <div class="lider-box">
+            <h3><i class="fas fa-shield-alt"></i> Resistente Elevada</h3>
+            <p class="texto-branco">Estes tem <span class="destaque-bonus">(2x) em Resistência</span>, conseguindo por membros deslocados no lugar, continuar usando algum membro mesmo com por exemplo: um braço com uma kunai enfiada.</p>
+        </div>
+
+        <div class="lider-box">
+            <h3><i class="fas fa-fire"></i> Nato em Ninjutsu</h3>
+            <p class="texto-branco">Shinobis que adiquiriu essa habilidade essa habilidade tem um aumento em <span class="destaque-bonus">(2x) na area de ninjutsu</span> aonde tem um aumento de maestria e tem <span class="destaque-bonus">reducao de 1 selo</span> para uso de qualquer ni jutsu.</p>
+        </div>
+
+        <div class="lider-box">
+            <h3><i class="fas fa-hands"></i> Nato Em Selos</h3>
+            <p class="texto-branco">Usuarios desss Habilidade tem com a Praticidade de Realizar Selos de mãos apenas com uma das mãos, também fazendo com que <span class="destaque-bonus">Reduzem 1 selo de mão</span> na aplicação do Jutsu.</p>
+        </div>
+
+        <div class="lider-box">
+            <h3><i class="fas fa-cloud-sun"></i> Resistência Elemental</h3>
+            <p class="texto-branco">Estes Tem como Uma <span class="destaque-bonus">Redução ao Dano de Jutsus Elementais em 25%</span> de sua eficácia, aonde qualquer jutsu elemental Recebe essa Redução (Exceto Kekkeis).</p>
+        </div>
+
+        <div class="lider-box">
+            <h3><i class="fas fa-project-diagram"></i> Fios De Chakra</h3>
+            <p class="texto-branco">Esta Habilidade Faz com que Possa Expandir seu Uso de Fio de chakra para Distânciasaiores e tambem aumentando a eficácia dos Pergaminho de Marionetes e Pergaminhos com Equipamentos Ninjas, e com isso faz com que tenha um aumento em <span class="destaque-bonus">(2x Em Técnicas de Marionetes)</span>.</p>
+        </div>
+
+    </div>
+</div>
 
     <div class="card-sistema">
         <h3>📜 Modelo de Ficha</h3>
@@ -774,7 +917,7 @@
 
     <div class="card-cla">
         <div class="cla-header">
-            <div class="simbolo-cla"><img src="./img/simbolos/Yamanaka.png" alt="yamanaka"></div>
+            <div class="simbolo-cla"><img src="./img/simbolos/yamanaka.png" alt="yamanaka"></div>
             <h3 class="nome-cla">Clã Yamanaka</h3>
         </div>
         <div class="divisor-brilhante"></div>

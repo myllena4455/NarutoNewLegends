@@ -153,9 +153,80 @@ body {
 
 .btn-ninja-whatsapp .texto-btn { font-family: 'Bangers'; font-size: 22px; }
 
-/* ==========================================================================
-   4. SISTEMAS (RANKS, TREINO, MISSÕES)
-   ========================================================================== */
+.card-sistema, 
+.painel-lideranca, 
+.lider-box, 
+.patente-item,
+.sub-marca,
+.card-atributo {
+    background: rgba(0, 0, 0, 0.4) !important; /* Fundo preto 40% transparente - Sem Borrão */
+    backdrop-filter: none !important; /* REMOVE O BORRADO */
+    -webkit-backdrop-filter: none !important;
+    border: 1px solid rgba(255, 145, 0, 0.5) !important; /* Borda laranja nítida */
+    border-radius: 12px !important;
+    padding: 25px !important;
+    margin-bottom: 20px !important;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5) !important; /* Sombra sutil */
+    transition: 0.3s;
+}
+
+/* Títulos: Mantendo o estilo Bangers Laranja igual para todos */
+.card-sistema h2, 
+.card-sistema h3,
+.titulo-lider-premium, 
+.lider-box h3, 
+.sub-marca h3,
+.rank-tag,
+.header-attr h3 {
+    font-family: 'Bangers', cursive !important;
+    color: #ff9100 !important;
+    font-size: 28px !important;
+    text-transform: uppercase !important;
+    text-shadow: 2px 2px 0px #000 !important; /* Sombra nítida sem desfoque */
+    margin-bottom: 15px !important;
+    border-bottom: 2px solid #ff9100;
+    padding-bottom: 5px;
+    display: inline-block; /* Faz a linha acompanhar o tamanho do texto */
+}
+
+/* Texto Branco Nítido */
+.card-sistema p, 
+.texto-branco, 
+.lista-lider li,
+.card-atributo p {
+    color: #ffffff !important;
+    font-size: 15px !important;
+    text-shadow: 1px 1px 2px #000 !important;
+    line-height: 1.6;
+}
+
+/* AJUSTE DEFINITIVO PARA NÃO CORTAR TEXTO */
+.exemplo-treino {
+    background: rgba(255, 145, 0, 0.1) !important;
+    border: 1px solid rgba(255, 145, 0, 0.5) !important;
+    border-radius: 8px;
+    padding: 15px !important;
+    margin: 15px 0 !important;
+    width: 100% !important;
+    display: block !important; /* Garante que a caixa ocupe a largura toda */
+    box-sizing: border-box !important;
+}
+
+.exemplo-treino code {
+    color: #ffffff !important;
+    font-family: 'Poppins', sans-serif !important; /* Fonte mais limpa para leitura */
+    font-size: 15px !important;
+    line-height: 1.6 !important;
+    
+    /* REGRAS DE QUEBRA AUTOMÁTICA */
+    display: block !important;         /* Transforma em bloco para aceitar quebra */
+    white-space: normal !important;    /* Força o texto a agir como texto normal */
+    word-wrap: break-word !important;  /* Quebra palavras se forem muito grandes */
+    overflow-wrap: break-word !important;
+    text-align: left;
+    text-shadow: 1px 1px 2px #000;
+}
+
 .intro-sistemas {
     color: #fff;
     font-style: italic;
@@ -163,15 +234,7 @@ body {
     padding: 0 10px;
 }
 
-.card-sistema {
-    background: rgba(0, 0, 0, 0.4);
-    border: 1px solid #ff9100;
-    border-radius: 15px;
-    padding: 20px;
-    margin-bottom: 25px;
-    color: #fff;
-    text-align: left;
-}
+
 
 .card-sistema h2 {
     color: #ff9100;
@@ -463,14 +526,7 @@ body {
 /* ==========================================================================
    6. SISTEMA DE LÍDERES
    ========================================================================== */
-.painel-lideranca {
-    margin-top: 60px;
-    background: linear-gradient(145deg, #0f0f0f, #1a1a1a);
-    border: 2px solid #ffd700;
-    border-radius: 20px;
-    padding: 30px;
-    box-shadow: 0 0 30px rgba(255, 215, 0, 0.2);
-}
+
 
 .lider-header {
     text-align: center;
@@ -883,4 +939,98 @@ button.btn-elemento:hover {
 
 .lista-jutsus {
     animation: fadeIn 0.5s ease;
+}
+.painel-atributos {
+    margin-top: 30px;
+    padding: 10px;
+}
+
+.container-atributos-grade {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.card-atributo {
+    background: rgba(0, 0, 0, 0.9) !important; /* Fundo escuro sólido */
+    border-left: 5px solid #ff9100; /* Detalhe lateral laranja */
+    border-radius: 8px;
+    padding: 20px;
+    text-align: left;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+}
+
+.header-attr {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 10px;
+}
+
+.header-attr i {
+    color: #ff9100;
+    font-size: 24px;
+}
+
+.header-attr h3 {
+    font-family: 'Bangers', cursive;
+    color: #ff9100;
+    font-size: 26px;
+    letter-spacing: 1px;
+}
+
+.card-atributo p {
+    color: #ffffff !important; /* Texto branco para leitura perfeita */
+    font-size: 15px;
+    line-height: 1.6;
+    margin: 0;
+}
+
+.destaque-bonus {
+    color: #00ff64 !important; /* Verde neon para as porcentagens (25%, 30%, etc) */
+    font-weight: bold;
+}
+
+/* Ajuste para telas maiores */
+@media (min-width: 768px) {
+    .container-atributos-grade {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+   
+
+##.container-pesquisa-sistemas {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+#buscaSistemas {
+    width: 90%;
+    max-width: 600px;
+    padding: 15px 25px;
+    background: rgba(0, 0, 0, 0.4); /* Transparência leve */
+    backdrop-filter: blur(10px); /* Efeito de vidro */
+    -webkit-backdrop-filter: blur(10px);
+    border: 2px solid #ff9100; /* Borda laranja brilhante */
+    border-radius: 50px;
+    color: #fff;
+    font-size: 16px;
+    outline: none;
+    box-shadow: 0 0 15px rgba(255, 145, 0, 0.3);
+    transition: 0.4s;
+}
+
+#buscaSistemas:focus {
+    border-color: #00ff64; /* Muda para verde neon ao clicar */
+    box-shadow: 0 0 20px rgba(0, 255, 100, 0.4);
+    background: rgba(0, 0, 0, 0.6);
+}
+
+#buscaSistemas::placeholder {
+    color: rgba(255, 255, 255, 0.5);
+    font-style: italic;
 }
