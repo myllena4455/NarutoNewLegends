@@ -111,31 +111,3 @@ function filtrarSistemas() {
         }
     });
 }
-const audio = document.getElementById("musicaFundo");
-const btnMusica = document.getElementById("btnMusica");
-const iconeMusica = document.getElementById("iconeMusica");
-const sliderVolume = document.getElementById("volumeMusica");
-
-// Define volume inicial baixo (30%)
-if (audio) {
-    audio.volume = 0.3;
-    audio.addEventListener('canplaythrough', () => console.log('Áudio pronto para tocar'));        
-    audio.addEventListener('error', (e) => console.error('Erro ao carregar áudio:', e));
-}
-
-function toggleMusica() {
-    if (audio.paused) {
-        audio.play();
-        iconeMusica.innerText = "⏸️";
-        btnMusica.style.boxShadow = "0 0 15px #ff9100";
-    } else {
-        audio.pause();
-        iconeMusica.innerText = "▶️";
-        btnMusica.style.boxShadow = "none";
-    }
-}
-
-function ajustarVolume() {
-    audio.volume = sliderVolume.value;
-}
-
