@@ -100,6 +100,56 @@ body {
   border-radius: 50%; z-index: 10000; cursor: pointer;
   font-size: 24px;
 }
+/* PLAYER COMPACTO NO MENU */
+.container-musica-menu {
+    margin-top: auto; /* Empurra para o fundo do menu */
+    padding: 15px;
+    background: rgba(255, 145, 0, 0.05);
+    border-top: 1px solid rgba(255, 145, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.titulo-musica {
+    font-family: 'Bangers', cursive;
+    color: #ff9100;
+    font-size: 14px; /* Menor para não gritar */
+    letter-spacing: 1px;
+    margin-bottom: 8px;
+}
+
+.controles-musica {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+    justify-content: center;
+}
+
+.btn-audio-compacto {
+    background: none;
+    border: 1px solid #ff9100;
+    color: #fff;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.3s;
+}
+
+.btn-audio-compacto:hover {
+    background: rgba(255, 145, 0, 0.2);
+}
+
+#volumeMusica {
+    width: 70px; /* Bem pequeno para caber no menu lateral */
+    accent-color: #ff9100;
+}
+
 
 /* ==========================================================================
    3. CONTEÚDO PRINCIPAL E HOME
@@ -1033,4 +1083,28 @@ button.btn-elemento:hover {
 #buscaSistemas::placeholder {
     color: rgba(255, 255, 255, 0.5);
     font-style: italic;
+}
+/* Ajuste de Texto para o Sistema de Incentivo */
+.card-sistema, .card-atributo {
+    background: rgba(0, 0, 0, 0.45) !important; /* Transparente nítido */
+    backdrop-filter: none !important;
+    border: 1px solid rgba(255, 145, 0, 0.5) !important;
+    word-wrap: break-word !important;
+    overflow-wrap: break-word !important;
+    white-space: normal !important;
+}
+
+.lista-lider li {
+    list-style: none;
+    margin-bottom: 10px;
+    padding-left: 15px;
+    border-left: 2px solid #ff9100;
+    color: #fff;
+}
+
+/* Garante que os títulos Bangers não cortem */
+.card-sistema h2, .header-attr h3 {
+    font-family: 'Bangers', cursive !important;
+    color: #ff9100 !important;
+    text-transform: uppercase;
 }

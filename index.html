@@ -13,18 +13,36 @@
   <label for="bt_menu" class="menu-icon">&#9776;</label> 
 
   <nav class="menu-lateral">
-    <div class="logo-menu">
-      <h3>NARUTO RPG</h3>
-    </div>
-    <ul>
-      <li><a href="javascript:void(0)" onclick="trocarAba('inicio')">🏠 Início</a></li>
-      <li><a href="javascript:void(0)" onclick="trocarAba('sistemas')">📜 Sistemas</a></li>
-      <li><a href="javascript:void(0)" onclick="trocarAba('criar-ficha')">🤝 Criar ficha</a></li>
-      <li><a href="javascript:void(0)" onclick="trocarAba('clas')">👥 Clãs</a></li>
-      <li><a href="javascript:void(0)" onclick="trocarAba('jutsus')">🔥 Jutsus listas </a></li>
+  <div class="logo-menu">
+    <h3>NARUTO RPG</h3>
+  </div>
+  <ul>
+    <li><a href="javascript:void(0)" onclick="trocarAba('inicio')">🏠 Início</a></li>
+    <li><a href="javascript:void(0)" onclick="trocarAba('sistemas')">📜 Sistemas</a></li>
+    <li><a href="javascript:void(0)" onclick="trocarAba('criar-ficha')">🤝 Criar ficha</a></li>
+    <li><a href="javascript:void(0)" onclick="trocarAba('clas')">👥 Clãs</a></li>
+    <li><a href="javascript:void(0)" onclick="trocarAba('jutsus')">🔥 Jutsus listas </a></li>
+  </ul>
 
-    </ul>
-  </nav>
+  <div class="container-musica-menu">
+    <p class="titulo-musica">SOUNDTRACK</p>
+    <audio id="musicaFundo" loop>
+      <source src="../musica/musica.mp3" type="audio/mpeg">
+    </audio>
+    
+    <div class="controles-musica">
+      <button onclick="toggleMusica()" id="btnMusica" class="btn-audio">
+        <span id="iconeMusica">▶️</span>
+      </button>
+      
+      <div class="volume-wrapper">
+        <span>🔈</span>
+        <input type="range" id="volumeMusica" min="0" max="1" step="0.1" value="0.3" oninput="ajustarVolume()">
+        <span>🔊</span>
+      </div>
+    </div>
+  </div>
+</nav>
 
   <main class="conteudo-principal">
   <section id="inicio" class="aba-conteudo active">
@@ -298,14 +316,7 @@
     <div class="divisor-biju"></div>
 
     <div class="sub-marca">
-        <h3>⏳ Treino por Hora (OFF)</h3>
-        <div class="texto-regra">
-            <p>O treino é baseado em tempo real. A cada hora off do grupo, você recebe 10 pontos:</p>
-            <div class="exemplo-treino">
-                <code>*(Nome do seu pp) inicia um treino de x horas @ADM*</code>
-            </div>
-            <p><strong>1h = 10 pontos.</strong> Proibido cenar durante o treino. Descanso: metade do tempo treinado.</p>
-        </div>
+        
     </div>
 </div>
  <div class="card-sistema">
@@ -368,6 +379,72 @@
     </div>
 </div>
      
+<div class="card-sistema">
+    <h2>🏛️ SISTEMA DE INCENTIVO</h2>
+    
+    <div class="painel-lideranca">
+        <h3><i class="fas fa-info-circle"></i> INFORMAÇÕES</h3>
+        <p class="texto-branco">
+            Este sistema premia a constância e a integração de novos jogadores. As recompensas são entregues todo domingo.
+        </p>
+    </div>
+
+    <div class="lider-box">
+        <h3><i class="fas fa-scroll"></i> REGRAS E LIMITES</h3>
+        <ul class="lista-lider">
+            <li><span class="destaque-importante">Limite de Repetição:</span> Cenas valem apenas <span class="destaque-bonus">3x com a mesma pessoa</span> (semanal).</li>
+            <li><span class="destaque-importante">Interação:</span> Busque outros jogadores para ganhar mais!</li>
+            <li><span class="destaque-importante">Qualidade:</span> Mínimo de <span class="destaque-bonus">5 linhas</span> por cena.</li>
+            <li><span class="destaque-importante">Registro:</span> Enviar prints no canal <span class="destaque-bonus">#registro-casual</span> até sábado (23:59).</li>
+        </ul>
+    </div>
+
+    <div class="lider-box">
+        <h3><i class="fas fa-user-plus"></i> BÓNUS DE INTEGRAÇÃO</h3>
+        <p class="texto-branco">
+            <span class="destaque-importante">Recepção Calorosa:</span> Cene com quem entrou há menos de uma semana e ganhe bónus:
+        </p>
+        <p class="destaque-bonus" style="font-size: 1.1rem; margin-top: 10px;">
+            +250 pts e $ 2.000 (além da faixa normal).
+        </p>
+    </div>
+
+    <div class="divisor-brilhante"></div>
+
+    <div class="painel-lideranca">
+        <h3>💰 FAIXAS SEMANAIS</h3>
+        
+        <div class="container-atributos-grade">
+            <div class="card-atributo">
+                <div class="header-attr"><h3>NÍVEL 1</h3></div>
+                <p><strong>Participante Ocasional</strong></p>
+                <p class="texto-branco">Requisito: 1 a 3 cenas na semana.</p>
+                <p class="destaque-bonus">Prémio: 200 pontos e $ 1.500 de money.</p>
+            </div>
+
+            <div class="card-atributo">
+                <div class="header-attr"><h3>NÍVEL 2</h3></div>
+                <p><strong>Cidadão Ativo</strong></p>
+                <p class="texto-branco">Requisito: 4 a 6 cenas na semana.</p>
+                <p class="destaque-bonus">Prémio: 350 pontos e $ 3.500 de money.</p>
+            </div>
+
+            <div class="card-atributo">
+                <div class="header-attr"><h3>NÍVEL 3</h3></div>
+                <p><strong>Socialite do Reino</strong></p>
+                <p class="texto-branco">Requisito: 7 a 10 cenas na semana.</p>
+                <p class="destaque-bonus">Prémio: 600 pontos e $ 6.500 de money.</p>
+            </div>
+
+            <div class="card-atributo">
+                <div class="header-attr"><h3>NÍVEL 4</h3></div>
+                <p><strong>Estrela do RPG</strong></p>
+                <p class="texto-branco">Requisito: 11 ou mais cenas (Limite).</p>
+                <p class="destaque-bonus">Prémio: 1.000 pontos e $ 10.000 de money.</p>
+            </div>
+        </div>
+    </div>
+</div>
 
 <div class="card-sistema">
     <h2>🎯 Sistema de Missões</h2>
@@ -704,6 +781,20 @@
     </div>
 </div>
 
+<div class="card-sistema" style="margin-top: 20px;">
+    <h3>⚡ CHAKRA POR PATENTE</h3>
+    <div class="painel-lideranca" style="background: none !important; border: none !important; padding: 0;">
+        <ul class="lista-lider">
+            <li><span class="destaque-importante">Gennin:</span> <span class="destaque-bonus">500</span></li>
+            <li><span class="destaque-importante">Chunnin:</span> <span class="destaque-bonus">1.000</span></li>
+            <li><span class="destaque-importante">Jounnin:</span> <span class="destaque-bonus">1.500</span></li>
+            <li><span class="destaque-importante">Nukke / Anbu / Kage:</span> <span class="destaque-bonus">3.000</span></li>
+        </ul>
+    </div>
+    <p class="texto-branco" style="font-size: 0.9rem; margin-top: 10px; opacity: 0.8;">
+        * Coloque o valor correspondente à sua patente no campo "Chakra" da sua ficha.
+    </p>
+</div>
 
     <div class="card-sistema">
       <div class="painel-lideranca">
