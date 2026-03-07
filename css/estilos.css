@@ -1,6 +1,4 @@
-/* ==========================================================================
-   1. CONFIGURAÇÕES GERAIS E RESET
-   ========================================================================== */
+
 * {
   margin: 0;
   padding: 0;
@@ -33,9 +31,7 @@ body {
   50% { transform: translateY(-10px); }
 }
 
-/* ==========================================================================
-   2. MENU LATERAL E NAVEGAÇÃO
-   ========================================================================== */
+
 .bt_menu { display: none !important; }
 
 .menu-lateral {
@@ -100,9 +96,9 @@ body {
   border-radius: 50%; z-index: 10000; cursor: pointer;
   font-size: 24px;
 }
-/* PLAYER COMPACTO NO MENU */
+
 .container-musica-menu {
-    margin-top: auto; /* Empurra para o fundo do menu */
+    margin-top: auto; 
     padding: 15px;
     background: rgba(255, 145, 0, 0.05);
     border-top: 1px solid rgba(255, 145, 0, 0.2);
@@ -114,7 +110,7 @@ body {
 .titulo-musica {
     font-family: 'Bangers', cursive;
     color: #ff9100;
-    font-size: 14px; /* Menor para não gritar */
+    font-size: 14px; 
     letter-spacing: 1px;
     margin-bottom: 8px;
 }
@@ -146,14 +142,12 @@ body {
 }
 
 #volumeMusica {
-    width: 70px; /* Bem pequeno para caber no menu lateral */
+    width: 70px; 
     accent-color: #ff9100;
 }
 
 
-/* ==========================================================================
-   3. CONTEÚDO PRINCIPAL E HOME
-   ========================================================================== */
+
 .conteudo-principal {
   flex: 1;
   padding: 100px 20px 40px;
@@ -182,7 +176,7 @@ body {
 
 
 
-/* RECRUTAMENTO */
+
 .container-recrutamento {
   margin-top: 60px; 
   padding-bottom: 20px;
@@ -209,18 +203,18 @@ body {
 .patente-item,
 .sub-marca,
 .card-atributo {
-    background: rgba(0, 0, 0, 0.4) !important; /* Fundo preto 40% transparente - Sem Borrão */
-    backdrop-filter: none !important; /* REMOVE O BORRADO */
+    background: rgba(0, 0, 0, 0.4) !important; 
+    backdrop-filter: none !important; 
     -webkit-backdrop-filter: none !important;
-    border: 1px solid rgba(255, 145, 0, 0.5) !important; /* Borda laranja nítida */
+    border: 1px solid rgba(255, 145, 0, 0.5) !important; 
     border-radius: 12px !important;
     padding: 25px !important;
     margin-bottom: 20px !important;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5) !important; /* Sombra sutil */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5) !important; 
     transition: 0.3s;
 }
 
-/* Títulos: Mantendo o estilo Bangers Laranja igual para todos */
+
 .card-sistema h2, 
 .card-sistema h3,
 .titulo-lider-premium, 
@@ -232,14 +226,14 @@ body {
     color: #ff9100 !important;
     font-size: 28px !important;
     text-transform: uppercase !important;
-    text-shadow: 2px 2px 0px #000 !important; /* Sombra nítida sem desfoque */
+    text-shadow: 2px 2px 0px #000 !important; 
     margin-bottom: 15px !important;
     border-bottom: 2px solid #ff9100;
     padding-bottom: 5px;
-    display: inline-block; /* Faz a linha acompanhar o tamanho do texto */
+    display: inline-block; 
 }
 
-/* Texto Branco Nítido */
+
 .card-sistema p, 
 .texto-branco, 
 .lista-lider li,
@@ -250,7 +244,7 @@ body {
     line-height: 1.6;
 }
 
-/* AJUSTE DEFINITIVO PARA NÃO CORTAR TEXTO */
+
 .exemplo-treino {
     background: rgba(255, 145, 0, 0.1) !important;
     border: 1px solid rgba(255, 145, 0, 0.5) !important;
@@ -258,20 +252,20 @@ body {
     padding: 15px !important;
     margin: 15px 0 !important;
     width: 100% !important;
-    display: block !important; /* Garante que a caixa ocupe a largura toda */
+    display: block !important; 
     box-sizing: border-box !important;
 }
 
 .exemplo-treino code {
     color: #ffffff !important;
-    font-family: 'Poppins', sans-serif !important; /* Fonte mais limpa para leitura */
+    font-family: 'Poppins', sans-serif !important; 
     font-size: 15px !important;
     line-height: 1.6 !important;
     
-    /* REGRAS DE QUEBRA AUTOMÁTICA */
-    display: block !important;         /* Transforma em bloco para aceitar quebra */
-    white-space: normal !important;    /* Força o texto a agir como texto normal */
-    word-wrap: break-word !important;  /* Quebra palavras se forem muito grandes */
+    
+    display: block !important;         
+    white-space: normal !important;    
+    word-wrap: break-word !important;  
     overflow-wrap: break-word !important;
     text-align: left;
     text-shadow: 1px 1px 2px #000;
@@ -366,13 +360,13 @@ body {
     font-size: 18px;
 }
 
-/* ESTILO DO SISTEMA DE PATENTES */
+
 .patente-container {
     display: block !important;
 }
 .patente-item { 
-  background: #000000 !important; /* Remove a transparência que bloqueia a visão */
-    border: 1px solid #ff9100 !important; /* Força a borda laranja da foto */
+  background: #000000 !important; 
+    border: 1px solid #ff9100 !important; 
     border-radius: 12px;
     padding: 20px;
     margin-bottom: 20px;
@@ -404,22 +398,22 @@ body {
     font-weight: bold;
 }
 
-/* CORES POR PATENTE */
+
 .patente-item.patente-chunnin { border-left: 5px solid #3b82f6 !important; }
 .patente-item.patente-jounnin { border-left: 5px solid #10b981 !important; }
 .patente-item.patente-elite   { border-left: 5px solid #ef4444 !important; }
 .patente-item.patente-auge    { border-left: 5px solid #ffd700 !important; border: 2px solid #ffd700 !important; }
 .recompensa-patente {
     display: flex;
-    flex-direction: column; /* No mobile, um embaixo do outro fica melhor */
+    flex-direction: column; 
     gap: 8px;
     margin-top: 10px;
     font-size: 15px;
-    color: #00ff64 !important; /* Força o verde neon */
+    color: #00ff64 !important; 
     font-weight: bold;
 }
 
-/* BLOCO DO KAGE (DESTAQUE MÁXIMO) */
+
 .patente-auge {
     border: 2px solid #ffd700;
     background: linear-gradient(145deg, rgba(255, 215, 0, 0.05), rgba(0,0,0,0.4));
@@ -438,7 +432,7 @@ body {
     margin-bottom: 5px;
 }
 
-/* AJUSTE PARA MOBILE */
+
 @media (max-width: 768px) {
     .patente-header {
         flex-direction: column;
@@ -448,13 +442,11 @@ body {
 }
 
 
-/* ==========================================================================
-   5. CLÃS E BIJŪS
-   ========================================================================== */
+
 .cla-header {
     display: flex;
-    flex-direction: column; /* Coloca um embaixo do outro */
-    align-items: center;    /* Centraliza horizontalmente */
+    flex-direction: column; 
+    align-items: center;    
     justify-content: center;
     margin-bottom: 15px;
     gap: 10px;
@@ -478,24 +470,24 @@ body {
 }
 
 .card-cla {
-    background: rgba(0, 0, 0, 0.85) !important; /* Fundo escuro para o card aparecer */
+    background: rgba(0, 0, 0, 0.85) !important; 
     border: 1px solid #ff9100 !important;
     border-radius: 15px !important;
     padding: 20px !important;
     margin: 20px auto !important;
     max-width: 90% !important;
     text-align: center !important;
-    display: block !important; /* Garante que o card não suma */
+    display: block !important; 
 }
 
 .nome-cla {
     font-family: 'Bangers', cursive !important;
     font-size: 26px !important;
-    margin-top: 10px !important; /* Espaço entre a foto e o nome */
+    margin-top: 10px !important; 
     color: #ff9100 !important;
     text-align: center !important;
     display: block !important;
-    background: none !important; /* Remove o gradiente se estiver bugando */
+    background: none !important; 
     -webkit-text-fill-color: initial !important; 
 }
 
@@ -507,7 +499,7 @@ body {
 }
 
 .simbolo-cla {
-    width: 100px !important;    /* Tamanho do círculo */
+    width: 100px !important;    
     height: 100px !important;
     border: 3px solid #ff9100 !important;
     border-radius: 50% !important;
@@ -515,27 +507,27 @@ body {
     display: flex !important;
     align-items: center !important;
     justify-content: center !important;
-    overflow: hidden !important; /* Corta a imagem se for maior que o círculo */
+    overflow: hidden !important; 
     box-shadow: 0 0 15px rgba(255, 145, 0, 0.5) !important;
-    margin: 0 auto; /* Centraliza o círculo no card */
+    margin: 0 auto; 
 }
 .simbolo-cla img {
-    width: 100% !important;     /* Obriga a imagem a ter 100px */
+    width: 100% !important;     
     height: 100% !important;
-    object-fit: cover !important; /* Faz a imagem preencher o círculo sem esticar */
+    object-fit: cover !important; 
 }
 .destaque-bonus {
-    color: #00ff64; /* Verde neon */
+    color: #00ff64; 
     font-weight: bold;
     text-shadow: 0 0 5px rgba(0, 255, 100, 0.5);
 }
 
 .destaque-importante {
-    color: #ff9100; /* Laranja */
+    color: #ff9100; 
     font-weight: bold;
 }
 
-/* BIJŪS */
+
 .foto-biju-render {
     width: 100%;
     max-width: 280px; 
@@ -573,9 +565,7 @@ body {
     margin-top: 50px;
 }
 
-/* ==========================================================================
-   6. SISTEMA DE LÍDERES
-   ========================================================================== */
+
 
 
 .lider-header {
@@ -652,7 +642,7 @@ body {
     color: #fff;
 }
 
-/* RECOMPENSAS LÍDER */
+
 .lider-recompensas-gold {
     background: linear-gradient(135deg, #ffd700, #b8860b);
     padding: 2px; 
@@ -716,9 +706,7 @@ body {
     letter-spacing: 1px;
 }
 
-/* ==========================================================================
-   7. OUTROS (SENNIN, MARCAS, RODAPÉ)
-   ========================================================================== */
+
 .caixa-alerta-sennin {
     background: rgba(0, 242, 255, 0.1);
     border: 1px solid #00f2ff;
@@ -757,7 +745,7 @@ body {
     text-align: center;
     margin: 20px 0;
 }
-/* ESTILO DO BOTÃO DE COPIAR */
+
 .btn-copiar {
     background: #222;
     color: #ff9100;
@@ -776,19 +764,19 @@ body {
     text-transform: uppercase;
 }
 
-/* Efeito ao passar o mouse */
+
 .btn-copiar:hover {
     background: #ff9100;
     color: #000;
     box-shadow: 0 0 10px rgba(255, 145, 0, 0.5);
 }
 
-/* Efeito quando clicado */
+
 .btn-copiar:active {
     transform: scale(0.95);
 }
 
-/* Estilo para quando o texto for "Copiado!" */
+
 .btn-copiar.sucesso {
     background: #00ff64;
     border-color: #00ff64;
@@ -796,9 +784,7 @@ body {
 }
 
 
-/* ==========================================================================
-   8. RESPONSIVIDADE (MOBILE)
-   ========================================================================== */
+
 .conteudo-principal {
   padding: 60px 15px 40px 15px; 
   max-width: 100%; 
@@ -834,11 +820,11 @@ body {
     max-width: 260px;
   }
 }
-/* --- CORREÇÃO PARA CELULAR (Ajuste o que já tem no final do arquivo) --- */
+
 @media (max-width: 768px) {
   
   .conteudo-principal {
-    padding: 80px 10px 20px 10px; /* Dá espaço para o ícone do menu */
+    padding: 80px 10px 20px 10px; 
     width: 100%;
     overflow-x: hidden;
   }
@@ -846,32 +832,32 @@ body {
   .card-cla {
     padding: 15px;
     display: flex;
-    flex-direction: column; /* Foto em cima, texto embaixo */
+    flex-direction: column; 
     align-items: center;
     text-align: center;
   }
 
   .cla-header {
-    flex-direction: column; /* Alinha ícone e nome verticalmente */
+    flex-direction: column; 
     gap: 10px;
   }
 
   .nome-cla {
-    font-size: 22px; /* Diminui um pouco para caber em uma linha */
+    font-size: 22px; 
   }
 
   .texto-claro {
-    font-size: 14px; /* Letra um pouco menor para não virar um paredão de texto */
+    font-size: 14px; 
     text-align: center;
   }
 
-  /* Ajuste das Bijus e Líderes para não vazar da tela */
+  
   .recompensa-grid-ouro {
-    grid-template-columns: 1fr; /* Transforma em lista no celular */
+    grid-template-columns: 1fr; 
     gap: 15px;
   }
 }
-/* --- MOBILE: corta vazamento lateral e deixa mídia flexível --- */
+
 html, body {
   width: 100%;
   overflow-x: hidden;
@@ -897,52 +883,52 @@ img {
 }
 
 .destaque-bonus {
-    color: #00ff64 !important; /* Verde neon para os números */
+    color: #00ff64 !important; 
     font-weight: bold;
     text-shadow: 0 0 5px rgba(0, 255, 100, 0.5);
 }
 
 .destaque-importante {
-    color: #ff9100 !important; /* Laranja para as Patentes */
+    color: #ff9100 !important; 
     font-weight: bold;
 }
-/* Estilo para os Cards de Jutsu - Melhora a visibilidade */
+
 .katon-section .card-cla, 
 .suiton-section .card-cla, 
 .fuuton-section .card-cla, 
 .doton-section .card-cla, 
 .raiton-section .card-cla {
-    background: rgba(0, 0, 0, 0.85) !important; /* Fundo bem escuro para destacar o texto */
-    border: 1px solid #ff9100; /* Borda laranja para combinar com o tema */
+    background: rgba(0, 0, 0, 0.85) !important; 
+    border: 1px solid #ff9100; 
     padding: 15px;
     margin-bottom: 15px;
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
 }
 
-/* Cor dos títulos dos Jutsus */
+
 .card-cla h4 {
-    color: #ff9100 !important; /* Laranja brilhante para o nome do Jutsu */
+    color: #ff9100 !important; 
     font-family: 'Bangers', cursive;
     font-size: 20px;
     margin-bottom: 8px;
     text-shadow: 1px 1px 2px #000;
 }
 
-/* Cor das descrições e detalhes */
+
 .card-cla p {
-    color: #ffffff !important; /* Texto totalmente branco para leitura fácil */
+    color: #ffffff !important; 
     font-size: 14px;
     line-height: 1.4;
     margin: 5px 0;
 }
 
-/* Destaque para os rótulos (Descrição, Rank, Selos) */
+
 .card-cla strong {
-    color: #ffcc00 !important; /* Amarelo para os tópicos */
+    color: #ffcc00 !important; 
 }
 
-/* Título da Seção (Ex: ELEMENTO FOGO) */
+
 .lista-jutsus h3 {
     color: #fff;
     text-align: center;
@@ -1002,8 +988,8 @@ button.btn-elemento:hover {
 }
 
 .card-atributo {
-    background: rgba(0, 0, 0, 0.9) !important; /* Fundo escuro sólido */
-    border-left: 5px solid #ff9100; /* Detalhe lateral laranja */
+    background: rgba(0, 0, 0, 0.9) !important; 
+    border-left: 5px solid #ff9100; 
     border-radius: 8px;
     padding: 20px;
     text-align: left;
@@ -1030,18 +1016,18 @@ button.btn-elemento:hover {
 }
 
 .card-atributo p {
-    color: #ffffff !important; /* Texto branco para leitura perfeita */
+    color: #ffffff !important; 
     font-size: 15px;
     line-height: 1.6;
     margin: 0;
 }
 
 .destaque-bonus {
-    color: #00ff64 !important; /* Verde neon para as porcentagens (25%, 30%, etc) */
+    color: #00ff64 !important; 
     font-weight: bold;
 }
 
-/* Ajuste para telas maiores */
+
 @media (min-width: 768px) {
     .container-atributos-grade {
         display: grid;
@@ -1050,7 +1036,7 @@ button.btn-elemento:hover {
 }
    
 
-##.container-pesquisa-sistemas {
+.container-pesquisa-sistemas {
     width: 100%;
     display: flex;
     justify-content: center;
@@ -1062,10 +1048,10 @@ button.btn-elemento:hover {
     width: 90%;
     max-width: 600px;
     padding: 15px 25px;
-    background: rgba(0, 0, 0, 0.4); /* Transparência leve */
-    backdrop-filter: blur(10px); /* Efeito de vidro */
+    background: rgba(0, 0, 0, 0.4); 
+    backdrop-filter: blur(10px); 
     -webkit-backdrop-filter: blur(10px);
-    border: 2px solid #ff9100; /* Borda laranja brilhante */
+    border: 2px solid #ff9100; 
     border-radius: 50px;
     color: #fff;
     font-size: 16px;
@@ -1075,7 +1061,7 @@ button.btn-elemento:hover {
 }
 
 #buscaSistemas:focus {
-    border-color: #00ff64; /* Muda para verde neon ao clicar */
+    border-color: #00ff64; 
     box-shadow: 0 0 20px rgba(0, 255, 100, 0.4);
     background: rgba(0, 0, 0, 0.6);
 }
@@ -1084,9 +1070,9 @@ button.btn-elemento:hover {
     color: rgba(255, 255, 255, 0.5);
     font-style: italic;
 }
-/* Ajuste de Texto para o Sistema de Incentivo */
+
 .card-sistema, .card-atributo {
-    background: rgba(0, 0, 0, 0.45) !important; /* Transparente nítido */
+    background: rgba(0, 0, 0, 0.45) !important; 
     backdrop-filter: none !important;
     border: 1px solid rgba(255, 145, 0, 0.5) !important;
     word-wrap: break-word !important;
@@ -1102,7 +1088,7 @@ button.btn-elemento:hover {
     color: #fff;
 }
 
-/* Garante que os títulos Bangers não cortem */
+
 .card-sistema h2, .header-attr h3 {
     font-family: 'Bangers', cursive !important;
     color: #ff9100 !important;

@@ -119,17 +119,9 @@ const sliderVolume = document.getElementById("volumeMusica");
 // Define volume inicial baixo (30%)
 if (audio) {
     audio.volume = 0.3;
+    audio.addEventListener('canplaythrough', () => console.log('Áudio pronto para tocar'));        
+    audio.addEventListener('error', (e) => console.error('Erro ao carregar áudio:', e));
 }
-
-// tenta começar a música assim que a página carregar
-window.addEventListener('load', () => {
-    if (audio) {
-        audio.play().catch(err => {
-            // muitos navegadores bloqueiam autoplay; usuário precisa clicar no botão
-            console.log('Autoplay impedido pelo navegador:', err);
-        });
-    }
-});
 
 function toggleMusica() {
     if (audio.paused) {
