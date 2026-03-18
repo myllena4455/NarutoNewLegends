@@ -246,6 +246,27 @@ body {
     margin-bottom: 30px;
     padding: 0 10px;
 }
+/* ESTILO PARA O AVISO DE ADM EM MISSÕES */
+.exemplo-treino {
+    background: rgba(0, 255, 100, 0.05) !important; /* Um verde bem sutil no fundo */
+    border: 1px solid rgba(0, 255, 100, 0.3) !important;
+    padding: 20px !important;
+    border-radius: 10px;
+    margin-bottom: 25px;
+    width: 100%;
+    display: block;
+}
+
+.exemplo-treino h3 {
+    letter-spacing: 1.5px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+/* Garante que o texto dentro do aviso não quebre de forma errada */
+.exemplo-treino p {
+    white-space: normal !important;
+    word-wrap: break-word !important;
+}
 
 
 
@@ -411,9 +432,6 @@ body {
 }
 
 
-/* ==========================================================================
-   5. CLÃS E BIJŪS
-   ========================================================================== */
 .cla-header {
     display: flex;
     flex-direction: column; /* Coloca um embaixo do outro */
@@ -421,6 +439,37 @@ body {
     justify-content: center;
     margin-bottom: 15px;
     gap: 10px;
+}
+
+.card-cla.bloqueado {
+    position: relative;
+    filter: grayscale(100%) brightness(0.6) !important; 
+    opacity: 0.7;
+    pointer-events: none; 
+    cursor: not-allowed;
+}
+
+
+.card-cla.bloqueado::after {
+    content: "INDISPONÍVEL";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(-15deg);
+    background: rgba(255, 0, 0, 0.9);
+    color: white;
+    padding: 8px 20px;
+    font-family: 'Bangers', cursive;
+    font-size: 22px;
+    border: 2px solid white;
+    z-index: 10;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    white-space: nowrap;
+}
+
+/* Garante que a imagem do clã bloqueado também fique cinza, mas não muda o TAMANHO dela */
+.card-cla.bloqueado .simbolo-cla img {
+    filter: grayscale(100%);
 }
 
 .titulo-destaque-rpg {
